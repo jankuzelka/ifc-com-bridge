@@ -208,15 +208,15 @@ See [docs/local-testing.md](docs/local-testing.md) and [docs/characterization-ha
 | [docs/characterization-harness.md](docs/characterization-harness.md) | CLI, tests, summaries and the baseline workflow |
 | [docs/local-testing.md](docs/local-testing.md) | testing with your own models |
 
+## Author
+
+Jan Kuželka — [https://kuzelka.dev](https://kuzelka.dev)
+
 ## Support
 
 If you find this library useful, you can support my work.
 
 [![Support my work](https://img.shields.io/badge/Support%20my%20work-2F81F7?logo=buy-me-a-coffee&logoColor=white)](https://buymeacoffee.com/jankuzelka)
-
-## Author
-
-Jan Kuželka — [https://kuzelka.dev](https://kuzelka.dev)
 
 ## Licence
 
