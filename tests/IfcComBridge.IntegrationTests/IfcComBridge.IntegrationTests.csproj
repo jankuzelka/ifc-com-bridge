@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Local-only tests against PRIVATE models. Inputs come exclusively from IFCCOMBRIDGE_* environment
+    variables (see LocalData.cs); every test skips itself when its variables are not set, so this
+    project is green (all skipped) on machines without private data, including CI.
+    No model data is ever part of this project.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <Platforms>x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <RootNamespace>IfcComBridge.IntegrationTests</RootNamespace>
+  </PropertyGroup>
+
+  <Import Project="..\..\eng\LibraryReference.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\tools\IfcComBridge.Cli\IfcComBridge.Cli.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

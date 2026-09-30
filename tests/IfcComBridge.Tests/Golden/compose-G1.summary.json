@@ -1,0 +1,1085 @@
+{
+  "summaryFormat": 1,
+  "schema": "Ifc4",
+  "entityCounts": {
+    "IfcApplication": 1,
+    "IfcArbitraryClosedProfileDef": 3,
+    "IfcAxis2Placement3D": 20,
+    "IfcBeam": 6,
+    "IfcBeamType": 1,
+    "IfcBuilding": 1,
+    "IfcBuildingStorey": 1,
+    "IfcCartesianPoint": 51,
+    "IfcClassification": 1,
+    "IfcClassificationReference": 1,
+    "IfcClosedShell": 4,
+    "IfcColourRgb": 1,
+    "IfcDirection": 43,
+    "IfcExtrudedAreaSolid": 3,
+    "IfcFace": 24,
+    "IfcFaceOuterBound": 24,
+    "IfcFacetedBrep": 4,
+    "IfcGeometricRepresentationContext": 6,
+    "IfcLocalPlacement": 11,
+    "IfcMaterial": 1,
+    "IfcOrganization": 1,
+    "IfcPerson": 1,
+    "IfcPersonAndOrganization": 1,
+    "IfcPolyLoop": 24,
+    "IfcPolyline": 3,
+    "IfcPresentationLayerAssignment": 1,
+    "IfcProductDefinitionShape": 8,
+    "IfcProject": 1,
+    "IfcPropertySet": 1,
+    "IfcPropertySingleValue": 1,
+    "IfcRelAggregates": 3,
+    "IfcRelAssociatesClassification": 1,
+    "IfcRelAssociatesMaterial": 1,
+    "IfcRelContainedInSpatialStructure": 1,
+    "IfcRelDefinesByProperties": 1,
+    "IfcRelDefinesByType": 1,
+    "IfcSIUnit": 2,
+    "IfcShapeRepresentation": 8,
+    "IfcSite": 1,
+    "IfcSlab": 1,
+    "IfcStyledItem": 4,
+    "IfcSurfaceStyle": 1,
+    "IfcSurfaceStyleRendering": 1,
+    "IfcUnitAssignment": 1,
+    "IfcWallStandardCase": 1
+  },
+  "globalIds": {
+    "rootEntities": 22,
+    "distinct": 21,
+    "duplicatedIds": 1,
+    "entitiesSharingAnId": 2
+  },
+  "units": [
+    "LENGTHUNIT: MILLIMETRE",
+    "VOLUMEUNIT: CUBIC_METRE"
+  ],
+  "representationContexts": [
+    {
+      "label": 1,
+      "type": "IfcGeometricRepresentationContext",
+      "identifier": null,
+      "contextType": "Model",
+      "attachedToProject": true
+    },
+    {
+      "label": 65,
+      "type": "IfcGeometricRepresentationContext",
+      "identifier": null,
+      "contextType": "Model",
+      "attachedToProject": false
+    },
+    {
+      "label": 118,
+      "type": "IfcGeometricRepresentationContext",
+      "identifier": null,
+      "contextType": "Model",
+      "attachedToProject": false
+    },
+    {
+      "label": 160,
+      "type": "IfcGeometricRepresentationContext",
+      "identifier": null,
+      "contextType": "Model",
+      "attachedToProject": false
+    },
+    {
+      "label": 202,
+      "type": "IfcGeometricRepresentationContext",
+      "identifier": null,
+      "contextType": "Model",
+      "attachedToProject": false
+    },
+    {
+      "label": 290,
+      "type": "IfcGeometricRepresentationContext",
+      "identifier": null,
+      "contextType": "Model",
+      "attachedToProject": true
+    }
+  ],
+  "spatialStructure": [
+    {
+      "label": 29,
+      "type": "IfcSite",
+      "name": "Site",
+      "elevation": null,
+      "containedElements": 0,
+      "placement": {
+        "type": "IfcLocalPlacement",
+        "relative": {
+          "kind": "3D",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "refDirection": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "parentDepth": 0,
+        "world": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "xAxis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "zAxis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "label": 31,
+      "type": "IfcBuilding",
+      "name": "Building",
+      "elevation": null,
+      "containedElements": 0,
+      "placement": {
+        "type": "IfcLocalPlacement",
+        "relative": {
+          "kind": "3D",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "refDirection": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "parentDepth": 1,
+        "world": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "xAxis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "zAxis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "label": 33,
+      "type": "IfcBuildingStorey",
+      "name": "Level 0",
+      "elevation": 0.0,
+      "containedElements": 8,
+      "placement": {
+        "type": "IfcLocalPlacement",
+        "relative": {
+          "kind": "3D",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "refDirection": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "parentDepth": 2,
+        "world": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "xAxis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "zAxis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  ],
+  "products": [
+    {
+      "label": 20,
+      "type": "IfcSlab",
+      "name": "Floor",
+      "description": null,
+      "objectType": null,
+      "globalIdShared": false,
+      "placement": {
+        "type": "IfcLocalPlacement",
+        "relative": {
+          "kind": "3D",
+          "location": [
+            0.0,
+            0.0,
+            -200.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "refDirection": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "parentDepth": 3,
+        "world": {
+          "origin": [
+            0.0,
+            0.0,
+            -200.0
+          ],
+          "xAxis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "zAxis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "containedIn": [
+        "Level 0"
+      ],
+      "types": [],
+      "propertySets": [],
+      "materials": [],
+      "classifications": [],
+      "representations": [
+        {
+          "label": 6,
+          "identifier": "Body",
+          "type": "SweptSolid",
+          "contextLabel": 1,
+          "layers": [],
+          "items": [
+            {
+              "label": 7,
+              "type": "IfcExtrudedAreaSolid",
+              "styles": [],
+              "depth": 200.0,
+              "extrudedDirection": [
+                0.0,
+                0.0,
+                1.0
+              ],
+              "position": {
+                "kind": "3D",
+                "location": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "refDirection": [
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "profile": {
+                "type": "IfcArbitraryClosedProfileDef",
+                "points": 5,
+                "bbox": [
+                  0.0,
+                  0.0,
+                  "NaN",
+                  6000.0,
+                  6000.0,
+                  "NaN"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": 57,
+      "type": "IfcBeam",
+      "name": "BEAM_A [BEAM&A]",
+      "description": "JSON [ID: 1, SET_ID: S1]",
+      "objectType": null,
+      "globalIdShared": true,
+      "placement": {
+        "type": "IfcLocalPlacement",
+        "relative": {
+          "kind": "3D",
+          "location": [
+            501.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "refDirection": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "parentDepth": 0,
+        "world": {
+          "origin": [
+            501.0,
+            0.0,
+            0.0
+          ],
+          "xAxis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "zAxis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "containedIn": [
+        "Level 0"
+      ],
+      "types": [
+        "SyntheticBeamType"
+      ],
+      "propertySets": [
+        {
+          "name": "Pset_Synthetic",
+          "properties": [
+            "Grade=A"
+          ]
+        }
+      ],
+      "materials": [
+        "SyntheticTimber"
+      ],
+      "classifications": [
+        "SC-01|Synthetic beams"
+      ],
+      "representations": [
+        {
+          "label": 64,
+          "identifier": "Body",
+          "type": "Brep",
+          "contextLabel": 65,
+          "layers": [
+            "SyntheticLayer"
+          ],
+          "items": [
+            {
+              "label": 70,
+              "type": "IfcFacetedBrep",
+              "styles": [
+                "SyntheticRed"
+              ],
+              "faces": 6,
+              "loopPoints": 24,
+              "distinctPointEntities": 8,
+              "bbox": [
+                0.0,
+                0.0,
+                0.0,
+                1000.0,
+                100.0,
+                50.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": 102,
+      "type": "IfcBeam",
+      "name": "BEAM_A [BEAM&A]",
+      "description": "JSON [ID: 2, SET_ID: S1]",
+      "objectType": null,
+      "globalIdShared": true,
+      "placement": {
+        "type": "IfcLocalPlacement",
+        "relative": {
+          "kind": "3D",
+          "location": [
+            501.0,
+            300.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "refDirection": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "parentDepth": 0,
+        "world": {
+          "origin": [
+            501.0,
+            300.0,
+            0.0
+          ],
+          "xAxis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "zAxis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "containedIn": [
+        "Level 0"
+      ],
+      "types": [
+        "SyntheticBeamType"
+      ],
+      "propertySets": [
+        {
+          "name": "Pset_Synthetic",
+          "properties": [
+            "Grade=A"
+          ]
+        }
+      ],
+      "materials": [
+        "SyntheticTimber"
+      ],
+      "classifications": [
+        "SC-01|Synthetic beams"
+      ],
+      "representations": [
+        {
+          "label": 109,
+          "identifier": "Body",
+          "type": "Brep",
+          "contextLabel": 65,
+          "layers": [
+            "SyntheticLayer"
+          ],
+          "items": [
+            {
+              "label": 70,
+              "type": "IfcFacetedBrep",
+              "styles": [
+                "SyntheticRed"
+              ],
+              "faces": 6,
+              "loopPoints": 24,
+              "distinctPointEntities": 8,
+              "bbox": [
+                0.0,
+                0.0,
+                0.0,
+                1000.0,
+                100.0,
+                50.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": 110,
+      "type": "IfcBeam",
+      "name": "CAT_1200 [CAT-1100]",
+      "description": "JSON [ID: 3, SET_ID: S2]",
+      "objectType": null,
+      "globalIdShared": false,
+      "placement": {
+        "type": "IfcLocalPlacement",
+        "relative": {
+          "kind": "3D",
+          "location": [
+            0.0,
+            2000.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "refDirection": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "parentDepth": 0,
+        "world": {
+          "origin": [
+            0.0,
+            2000.0,
+            0.0
+          ],
+          "xAxis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "zAxis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "containedIn": [
+        "Level 0"
+      ],
+      "types": [
+        "SyntheticBeamType"
+      ],
+      "propertySets": [
+        {
+          "name": "Pset_Synthetic",
+          "properties": [
+            "Grade=A"
+          ]
+        }
+      ],
+      "materials": [
+        "SyntheticTimber"
+      ],
+      "classifications": [
+        "SC-01|Synthetic beams"
+      ],
+      "representations": [
+        {
+          "label": 117,
+          "identifier": "Body",
+          "type": "Brep",
+          "contextLabel": 118,
+          "layers": [
+            "SyntheticLayer"
+          ],
+          "items": [
+            {
+              "label": 123,
+              "type": "IfcFacetedBrep",
+              "styles": [
+                "SyntheticRed"
+              ],
+              "faces": 6,
+              "loopPoints": 24,
+              "distinctPointEntities": 8,
+              "bbox": [
+                0.0,
+                0.0,
+                0.0,
+                1100.0,
+                100.0,
+                50.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": 152,
+      "type": "IfcBeam",
+      "name": "CAT_1500 [CAT-1600]",
+      "description": "JSON [ID: 4, SET_ID: S2]",
+      "objectType": null,
+      "globalIdShared": false,
+      "placement": {
+        "type": "IfcLocalPlacement",
+        "relative": {
+          "kind": "3D",
+          "location": [
+            1000.0,
+            2000.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "refDirection": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        },
+        "parentDepth": 0,
+        "world": {
+          "origin": [
+            1000.0,
+            2000.0,
+            0.0
+          ],
+          "xAxis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "zAxis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "containedIn": [
+        "Level 0"
+      ],
+      "types": [
+        "SyntheticBeamType"
+      ],
+      "propertySets": [
+        {
+          "name": "Pset_Synthetic",
+          "properties": [
+            "Grade=A"
+          ]
+        }
+      ],
+      "materials": [
+        "SyntheticTimber"
+      ],
+      "classifications": [
+        "SC-01|Synthetic beams"
+      ],
+      "representations": [
+        {
+          "label": 159,
+          "identifier": "Body",
+          "type": "Brep",
+          "contextLabel": 160,
+          "layers": [
+            "SyntheticLayer"
+          ],
+          "items": [
+            {
+              "label": 165,
+              "type": "IfcFacetedBrep",
+              "styles": [
+                "SyntheticRed"
+              ],
+              "faces": 6,
+              "loopPoints": 24,
+              "distinctPointEntities": 8,
+              "bbox": [
+                0.0,
+                0.0,
+                0.0,
+                1600.0,
+                100.0,
+                50.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": 194,
+      "type": "IfcBeam",
+      "name": "CAT_1000 [CAT-1000-clip]",
+      "description": "JSON [ID: 5, SET_ID: S2]",
+      "objectType": null,
+      "globalIdShared": false,
+      "placement": {
+        "type": "IfcLocalPlacement",
+        "relative": {
+          "kind": "3D",
+          "location": [
+            1950.0,
+            2000.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "refDirection": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "parentDepth": 0,
+        "world": {
+          "origin": [
+            1950.0,
+            2000.0,
+            0.0
+          ],
+          "xAxis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "zAxis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "containedIn": [
+        "Level 0"
+      ],
+      "types": [
+        "SyntheticBeamType"
+      ],
+      "propertySets": [
+        {
+          "name": "Pset_Synthetic",
+          "properties": [
+            "Grade=A"
+          ]
+        }
+      ],
+      "materials": [
+        "SyntheticTimber"
+      ],
+      "classifications": [
+        "SC-01|Synthetic beams"
+      ],
+      "representations": [
+        {
+          "label": 201,
+          "identifier": "Body",
+          "type": "Brep",
+          "contextLabel": 202,
+          "layers": [
+            "SyntheticLayer"
+          ],
+          "items": [
+            {
+              "label": 207,
+              "type": "IfcFacetedBrep",
+              "styles": [
+                "SyntheticRed"
+              ],
+              "faces": 6,
+              "loopPoints": 24,
+              "distinctPointEntities": 8,
+              "bbox": [
+                0.0,
+                0.0,
+                0.0,
+                900.0,
+                100.0,
+                50.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": 236,
+      "type": "IfcBeam",
+      "name": "EXTRUDED_B [EXT]",
+      "description": "JSON [ID: 6, SET_ID: S3]",
+      "objectType": null,
+      "globalIdShared": false,
+      "placement": {
+        "type": "IfcLocalPlacement",
+        "relative": {
+          "kind": "3D",
+          "location": [
+            3156.19873,
+            3370.544136,
+            -25.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "refDirection": [
+            -0.5,
+            -0.866025,
+            0.0
+          ]
+        },
+        "parentDepth": 0,
+        "world": {
+          "origin": [
+            3156.19873,
+            3370.544136,
+            -25.0
+          ],
+          "xAxis": [
+            -0.5,
+            -0.866025,
+            0.0
+          ],
+          "zAxis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "containedIn": [
+        "Level 0"
+      ],
+      "types": [
+        "SyntheticBeamType"
+      ],
+      "propertySets": [
+        {
+          "name": "Pset_Synthetic",
+          "properties": [
+            "Grade=A"
+          ]
+        }
+      ],
+      "materials": [
+        "SyntheticTimber"
+      ],
+      "classifications": [
+        "SC-01|Synthetic beams"
+      ],
+      "representations": [
+        {
+          "label": 243,
+          "identifier": "Body",
+          "type": "SweptSolid",
+          "contextLabel": 65,
+          "layers": [
+            "SyntheticLayer"
+          ],
+          "items": [
+            {
+              "label": 244,
+              "type": "IfcExtrudedAreaSolid",
+              "styles": [],
+              "depth": 50.0,
+              "extrudedDirection": [
+                0.0,
+                0.0,
+                1.0
+              ],
+              "position": {
+                "kind": "3D",
+                "location": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "refDirection": [
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "profile": {
+                "type": "IfcArbitraryClosedProfileDef",
+                "points": 5,
+                "bbox": [
+                  0.0,
+                  0.0,
+                  "NaN",
+                  800.0,
+                  100.0,
+                  "NaN"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": 256,
+      "type": "IfcWallStandardCase",
+      "name": "WALL_W [WALL]",
+      "description": "JSON [ID: 7, SET_ID: S3]",
+      "objectType": null,
+      "globalIdShared": false,
+      "placement": {
+        "type": "IfcLocalPlacement",
+        "relative": {
+          "kind": "3D",
+          "location": [
+            1.0,
+            5000.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "refDirection": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "parentDepth": 0,
+        "world": {
+          "origin": [
+            1.0,
+            5000.0,
+            0.0
+          ],
+          "xAxis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "zAxis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "containedIn": [
+        "Level 0"
+      ],
+      "types": [],
+      "propertySets": [
+        {
+          "name": "Pset_Synthetic",
+          "properties": [
+            "Grade=A"
+          ]
+        }
+      ],
+      "materials": [
+        "SyntheticTimber"
+      ],
+      "classifications": [],
+      "representations": [
+        {
+          "label": 263,
+          "identifier": "Body",
+          "type": "SweptSolid",
+          "contextLabel": 65,
+          "layers": [
+            "SyntheticLayer"
+          ],
+          "items": [
+            {
+              "label": 264,
+              "type": "IfcExtrudedAreaSolid",
+              "styles": [],
+              "depth": 2500.0,
+              "extrudedDirection": [
+                0.0,
+                0.0,
+                1.0
+              ],
+              "position": {
+                "kind": "3D",
+                "location": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "refDirection": [
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "profile": {
+                "type": "IfcArbitraryClosedProfileDef",
+                "points": 5,
+                "bbox": [
+                  0.0,
+                  0.0,
+                  "NaN",
+                  2000.0,
+                  200.0,
+                  "NaN"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "cartesianPoints": 51,
+    "distinctPointCoordinates": 38
+  }
+}

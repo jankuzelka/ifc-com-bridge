@@ -1,0 +1,47 @@
+# Build output
+bin/
+obj/
+artifacts/
+.vs/
+*.user
+*.suo
+TestResults/
+
+# The repository is source-only: no binaries, type libraries, symbols, installers or packages,
+# wherever they end up (see THIRD_PARTY_NOTICES.md before distributing a build).
+*.dll
+*.exe
+*.pdb
+*.tlb
+*.nupkg
+*.snupkg
+*.msi
+
+# Logs, test results and exports of local runs (the scripts write them to %TEMP% by default)
+*.binlog
+*.log
+*.trx
+*.coverage
+*.reg
+
+# Editor, tool and OS leftovers
+.idea/
+*.DotSettings.user
+*.bak
+*.tmp
+Thumbs.db
+.DS_Store
+
+# Model data and anything derived from it must never be committed.
+# (Baselines are additionally refused inside the repository by scripts\*.ps1 and the CLI.)
+*.ifc
+*.ifczip
+*.ifcxml
+*.xbim
+*.wexbim
+*.zip
+test-data/
+private/
+*.local.json
+# The private test configuration belongs outside the repository; only tests.local.example.json is tracked.
+tests.local.json

@@ -1,0 +1,55 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E0D850DD-9852-4E8F-A244-61EEF08547FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IfcComBridge", "src\IfcComBridge\IfcComBridge.csproj", "{A3CF6B78-C36E-4594-81D2-6814C511105C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{82CB9B8E-7D5A-4AB2-871F-F82A71994655}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BD07EDAB-1D67-4E3E-BE34-A1B6B8ED1CB7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IfcComBridge.Cli", "tools\IfcComBridge.Cli\IfcComBridge.Cli.csproj", "{79B56ED8-55B7-458F-8142-94602947603F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IfcComBridge.Tests", "tests\IfcComBridge.Tests\IfcComBridge.Tests.csproj", "{ACE6C76A-73A7-4F6E-80B2-5A1CB1700327}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IfcComBridge.IntegrationTests", "tests\IfcComBridge.IntegrationTests\IfcComBridge.IntegrationTests.csproj", "{0E891EE0-2419-472F-AC58-3C1D81E5B2CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3CF6B78-C36E-4594-81D2-6814C511105C}.Debug|x64.ActiveCfg = Debug|x64
+		{A3CF6B78-C36E-4594-81D2-6814C511105C}.Debug|x64.Build.0 = Debug|x64
+		{A3CF6B78-C36E-4594-81D2-6814C511105C}.Release|x64.ActiveCfg = Release|x64
+		{A3CF6B78-C36E-4594-81D2-6814C511105C}.Release|x64.Build.0 = Release|x64
+		{79B56ED8-55B7-458F-8142-94602947603F}.Debug|x64.ActiveCfg = Debug|x64
+		{79B56ED8-55B7-458F-8142-94602947603F}.Debug|x64.Build.0 = Debug|x64
+		{79B56ED8-55B7-458F-8142-94602947603F}.Release|x64.ActiveCfg = Release|x64
+		{79B56ED8-55B7-458F-8142-94602947603F}.Release|x64.Build.0 = Release|x64
+		{ACE6C76A-73A7-4F6E-80B2-5A1CB1700327}.Debug|x64.ActiveCfg = Debug|x64
+		{ACE6C76A-73A7-4F6E-80B2-5A1CB1700327}.Debug|x64.Build.0 = Debug|x64
+		{ACE6C76A-73A7-4F6E-80B2-5A1CB1700327}.Release|x64.ActiveCfg = Release|x64
+		{ACE6C76A-73A7-4F6E-80B2-5A1CB1700327}.Release|x64.Build.0 = Release|x64
+		{0E891EE0-2419-472F-AC58-3C1D81E5B2CE}.Debug|x64.ActiveCfg = Debug|x64
+		{0E891EE0-2419-472F-AC58-3C1D81E5B2CE}.Debug|x64.Build.0 = Debug|x64
+		{0E891EE0-2419-472F-AC58-3C1D81E5B2CE}.Release|x64.ActiveCfg = Release|x64
+		{0E891EE0-2419-472F-AC58-3C1D81E5B2CE}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3CF6B78-C36E-4594-81D2-6814C511105C} = {E0D850DD-9852-4E8F-A244-61EEF08547FA}
+		{79B56ED8-55B7-458F-8142-94602947603F} = {82CB9B8E-7D5A-4AB2-871F-F82A71994655}
+		{ACE6C76A-73A7-4F6E-80B2-5A1CB1700327} = {BD07EDAB-1D67-4E3E-BE34-A1B6B8ED1CB7}
+		{0E891EE0-2419-472F-AC58-3C1D81E5B2CE} = {BD07EDAB-1D67-4E3E-BE34-A1B6B8ED1CB7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8251004E-F6C0-478E-ACD0-6E91DC68FF04}
+	EndGlobalSection
+EndGlobal

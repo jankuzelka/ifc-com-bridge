@@ -1,0 +1,13 @@
+﻿<Weavers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="FodyWeavers.xsd">
+  <!--
+    Why Costura: IfcComBridge.dll is an in-process COM server, so it runs in the host's process under the host's
+    configuration. Its own .config file, and with it any binding redirect, is never read, yet its
+    dependencies disagree on versions (Xbim.Common is built against Microsoft.Extensions.Logging 2.1.1,
+    3.1.3 ships). Costura embeds the managed dependencies and resolves them by name at run time, so the
+    library is self-contained and needs no binding redirects of its own. A host's own redirects can still
+    interfere (docs/known-issues.md, KI-1). The native Xbim.Geometry.Engine64.dll cannot be loaded from
+    inside the library: deploy it next to IfcComBridge.dll.
+  -->
+  <Costura>
+  </Costura>
+</Weavers>

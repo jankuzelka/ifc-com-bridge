@@ -1,0 +1,14 @@
+[
+  {
+    "group_id": "OK",
+    "sets": [
+      { "set_id": "S1", "id": "1", "name": "BEAM&amp;A", "rotation": { "angle": 0 }, "vertices": [[0, 0], [1000, 0], [1000, 100], [0, 100]], "translate": { "x": 0, "y": 0 } }
+    ]
+  },
+  {
+    "group_id": "BROKEN",
+    "sets": [
+      { "set_id": "S2", "id": "2", "name": "BEAM&amp;A", "vertices": [[0, 0], [1000, 0], [1000, 100], [0, 100]], "translate": { "x": 0, "y": 0 } }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <Platforms>x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>IfcComBridge.Cli</RootNamespace>
+    <AssemblyName>IfcComBridge.Cli</AssemblyName>
+    <Deterministic>true</Deterministic>
+    <IsPackable>false</IsPackable>
+    <Description>Characterization and debug CLI for the IfcComBridge COM library.</Description>
+  </PropertyGroup>
+
+  <Import Project="..\..\eng\LibraryReference.props" />
+
+  <ItemGroup>
+    <!--
+      Synthetic JSON fixtures (tests/fixtures/synthetic), embedded so that the tests and the 'synthetic'
+      command use exactly the committed files. File names must be unique across sub-folders.
+    -->
+    <EmbeddedResource Include="..\..\tests\fixtures\synthetic\**\*.json"
+                      LogicalName="IfcComBridge.Cli.Synthetic.Fixtures.%(Filename)%(Extension)"
+                      Link="Synthetic\Fixtures\%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+
+</Project>

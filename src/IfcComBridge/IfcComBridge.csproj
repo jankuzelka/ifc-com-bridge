@@ -1,0 +1,76 @@
+﻿<!-- TreatAsLocalProperty: RegisterForComInterop below wins over any value passed to the build. -->
+<Project Sdk="Microsoft.NET.Sdk" TreatAsLocalProperty="RegisterForComInterop">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <!-- In-process COM server for 64-bit hosts only; the native geometry engine is x64 as well. -->
+    <Platforms>AnyCPU;x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <RootNamespace>IfcComBridge</RootNamespace>
+    <AssemblyName>IfcComBridge</AssemblyName>
+    <Deterministic>true</Deterministic>
+    <!-- The assembly attributes are in source: versions in Properties\AssemblyInfo.cs, COM attributes in Com\ComIdentity.cs. -->
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <!--
+      Costura embeds what is copied to the output folder, so package assemblies and their symbols must be
+      copied (the symbols keep file and line information in stack traces from xBIM code).
+    -->
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <CopyDebugSymbolFilesFromPackages>true</CopyDebugSymbolFilesFromPackages>
+    <!--
+      Run Fody after every compile step, as it does on MSBuild before 17, not only when the compiler runs.
+      Otherwise a build that skips compilation also skips Fody's removal of the embedded references from
+      the copy list, and all dependency DLLs reappear next to IfcComBridge.dll in the output folder.
+    -->
+    <FodyAfterTargets>AfterCompile</FodyAfterTargets>
+    <!-- Building never registers COM; registration is scripts\register-com.ps1. -->
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugType>pdbonly</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- ZipArchive (compressed IFC/WexBIM output). -->
+    <Reference Include="System.IO.Compression" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--
+      Xbim.Geometry brings Xbim.Geometry.Engine.Interop, whose build targets copy the native
+      Xbim.Geometry.Engine64.dll next to the output. It must stay there as a separate file: it cannot be
+      loaded from inside the Costura-embedded library.
+    -->
+    <PackageReference Include="Xbim.Essentials" Version="5.1.341" />
+    <PackageReference Include="Xbim.Geometry" Version="5.1.437" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Serilog" Version="3.0.1" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.3" />
+    <!--
+      COM-host compatibility pin, not an arbitrary dependency. Microsoft.Extensions.Logging 3.1.3 alone would
+      resolve Options 3.1.3. The embedded Options version decides which binding redirects in a host's
+      .exe.config work: a redirect to any other version makes Costura resolution recurse and crashes the host.
+      The tested host configurations rely on 7.0.1 (assembly 7.0.0.1); changing it may alter runtime behaviour in
+      COM hosts. See docs/known-issues.md.
+    -->
+    <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
+    <!--
+      COM-host compatibility pin, not needed to build: .NET Framework 4.7.2 contains ValueTuple. The library
+      embeds System.ValueTuple 4.0.3.0. A host that redirects System.ValueTuple to 4.0.3.0 without
+      shipping the DLL works only because of that embedded copy. See docs/known-issues.md.
+    -->
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    <PackageReference Include="Fody" Version="6.8.0" PrivateAssets="all" />
+    <PackageReference Include="Costura.Fody" Version="5.7.0" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>

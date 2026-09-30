@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "scenarios": {
+    "model": {
+      "ifc": "D:/IFC/model.ifc",
+      "transforms": "D:/IFC/transforms.json"
+    },
+    "composition": {
+      "building": "D:/IFC/building.ifc",
+      "products": "D:/IFC/products.ifc",
+      "productsMap": "D:/IFC/products-map.json",
+      "layout": "D:/IFC/layout.json"
+    }
+  }
+}

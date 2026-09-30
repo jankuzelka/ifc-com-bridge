@@ -1,0 +1,29 @@
+[
+  {
+    "group_id": "G1",
+    "sets": [
+      { "set_id": "S1", "id": "1", "name": "BEAM&amp;A", "rotation": { "angle": 0 }, "vertices": [[0, 0], [1000, 0], [1000, 100], [0, 100]], "translate": { "x": 500, "y": 0 } },
+      { "set_id": "S1", "id": "2", "name": "BEAM&amp;A", "rotation": { "angle": 0 }, "vertices": [[0, 0], [1000, 0], [1000, 100], [0, 100]], "translate": { "x": 500, "y": 300 } },
+      { "set_id": "S2", "id": "3", "name": "CAT-1100", "rotation": { "angle": 0 }, "vertices": [[0, 0], [100, 0], [100, 1100], [0, 1100]], "translate": { "x": 0, "y": 2000 } },
+      { "set_id": "S2", "id": "4", "name": "CAT-1600", "rotation": { "angle": 90 }, "vertices": [[0, 0], [1600, 0], [1600, 100], [0, 100]], "translate": { "x": 1000, "y": 2000 } },
+      { "set_id": "S2", "id": "5", "name": "CAT-1000-clip", "rotation": { "angle": 0 }, "vertices": [[0, 0], [100, 0], [100, 1000], [0, 1000]], "translate": { "x": 2000, "y": 2000 }, "clipvertices": [[0, 0], [100, 0], [100, 900], [0, 900]] },
+      { "set_id": "S3", "id": "6", "name": "EXT", "rotation": { "angle": 30 }, "vertices": [[0, 0], [800, 0], [800, 100], [0, 100]], "translate": { "x": 3000, "y": 3000 } },
+      { "set_id": "S3", "id": "7", "name": "WALL", "rotation": { "angle": 0 }, "vertices": [[0, 0], [2000, 0], [2000, 200], [0, 200]], "translate": { "x": 0, "y": 5000 } },
+      { "set_id": "S4", "id": "8", "name": "GHOST", "rotation": { "angle": 0 }, "vertices": [[0, 0], [100, 0], [100, 100], [0, 100]], "translate": { "x": 0, "y": 0 } },
+      { "set_id": "S4", "id": "9", "name": "UNKNOWN", "rotation": { "angle": 0 }, "vertices": [[0, 0], [100, 0], [100, 100], [0, 100]], "translate": { "x": 0, "y": 0 } },
+      { "set_id": "S4", "id": "10", "name": "SHORT-1500", "rotation": { "angle": 0 }, "vertices": [[0, 0], [100, 0], [100, 1500], [0, 1500]], "translate": { "x": 0, "y": 0 } }
+    ]
+  },
+  {
+    "group_id": "G2-empty",
+    "sets": [
+      { "set_id": "S9", "id": "11", "name": "UNKNOWN-2", "rotation": { "angle": 0 }, "vertices": [[0, 0], [100, 0], [100, 100], [0, 100]], "translate": { "x": 0, "y": 0 } }
+    ]
+  },
+  {
+    "group_id": "G3",
+    "sets": [
+      { "set_id": "S1", "id": "12", "name": "BEAM&amp;A", "rotation": { "angle": 0 }, "vertices": [[0, 0], [1000, 0], [1000, 100], [0, 100]], "translate": { "x": 0, "y": 0 } }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+<Project>
+  <!--
+    Imported by every harness project (CLI and tests): references the IfcComBridge library and the geometry
+    engine package. The package is referenced directly because NuGet imports a package's build\ targets
+    only for direct references. Those targets copy Xbim.Geometry.Engine64.dll next to the harness binaries,
+    and the library can only load the engine from a physical file.
+
+    Building never registers COM: the library project forces RegisterForComInterop=false.
+  -->
+  <ItemGroup>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\src\IfcComBridge\IfcComBridge.csproj" />
+    <PackageReference Include="Xbim.Geometry.Engine.Interop" Version="5.1.437" />
+  </ItemGroup>
+</Project>
