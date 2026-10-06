@@ -220,7 +220,7 @@ If you find this library useful, you can support my work.
 
 ## Licence
 
-IfcComBridge is released under the [MIT License](LICENSE), © 2023–2026 Jan Kuželka.
+IfcComBridge is released under the [MIT License](LICENSE).
 
 The MIT License covers this repository's own source code. The repository contains no binaries and no third-party code apart from one schema file that Fody generates (see the notices); NuGet downloads the dependencies when you build. The xBIM Toolkit, Open CASCADE and the other dependencies have their own licences, summarized in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Read that file before you distribute a binary build.
 
